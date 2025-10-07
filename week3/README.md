@@ -16,7 +16,7 @@ int __fastcall main(int argc, const char **argv, const char **envp)
   return 0;
 }
 ```
-무언가 입력했을 때 맞다 틀리다 결과를 출력하는 코드로 추정
+사용자가 무언가 입력했을 때 맞다 틀리다 결과를 출력하는 코드로 추정
 
 그럼 if문에서 정답과 입력 답을 비교해서 여부를 판단하겠지..?
 
