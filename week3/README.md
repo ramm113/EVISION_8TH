@@ -18,6 +18,7 @@ int __fastcall main(int argc, const char **argv, const char **envp)
 ```
 사용자가 무언가 입력했을 때 맞다 틀리다 결과를 출력하는 코드로 추정
 
+
 그럼 if문에서 정답과 입력 답을 비교해서 여부를 판단하겠지..?
 
 sub_140001000 더블클릭!
@@ -29,7 +30,9 @@ _BOOL8 __fastcall sub_140001000(const char *a1)
   return strcmp(a1, "Compar3_the_str1ng") == 0;
 }
 ```
-a1은 사용자 입력 변수인 것 같고 정답은 "Compar3_the_str1ng"
+변수 a1과 "Compar3_the_str1ng"을 비교한 결과를 return하는 코드
+
+변수 a1은 사용자 입력 변수인 것 같고 정답은 **"Compar3_the_str1ng"**
 ![업로드 실패](https://github.com/ramm113/EVISION_8TH/blob/main/week3/%EB%93%9C%EB%A6%BC%ED%95%B5%20%EC%84%B1%EA%B3%B5%20%ED%99%94%EB%A9%B4.png)
 
 
