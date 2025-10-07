@@ -19,9 +19,9 @@ int __fastcall main(int argc, const char **argv, const char **envp)
 사용자가 무언가 입력했을 때 맞다 틀리다 결과를 출력하는 코드로 추정
 
 
-그럼 if문에서 정답과 입력 답을 비교해서 여부를 판단하겠지..?
+그럼 if문에서 정답과 입력 답을 비교해서 여부를 판단할 것으로 생각
 
-sub_140001000 더블클릭!
+**sub_140001000** 더블 클릭!
 
 
 ```
@@ -33,6 +33,7 @@ _BOOL8 __fastcall sub_140001000(const char *a1)
 변수 a1과 "Compar3_the_str1ng"을 비교한 결과를 return하는 코드
 
 변수 a1은 사용자 입력 변수인 것 같고 정답은 **"Compar3_the_str1ng"**
+
 ![업로드 실패](https://github.com/ramm113/EVISION_8TH/blob/main/week3/%EB%93%9C%EB%A6%BC%ED%95%B5%20%EC%84%B1%EA%B3%B5%20%ED%99%94%EB%A9%B4.png)
 
 
@@ -75,14 +76,14 @@ int main(){
 ```markdown
 int main()
 {
-  unsigned int v1; // [esp+1Ch] [ebp-4h] BYREF
+  unsigned int v1; // [esp+1Ch] [ebp-4h] BYREF    #사용자 입력 변수 v1을 unsigned int로 선언해 0 미만을 고려할 필요 없음
 
   __main();
   while ( 1 )
   {
     printf("Enter an integer (within two digits): ");
     scanf("%d", &v1);
-    if ( v1 < 0x64 )    #!의사코드에선 16진수로 표현, 0 이하 조건은 없어짐!
+    if ( v1 < 0x64 )    #!의사코드에선 100을 16진수로 표현
       break;
     puts("Enter again.");
   }
@@ -94,3 +95,8 @@ int main()
 }
 ```
 
+가장 크게 두 가지의 차이를 발견
+1. 사용자 입력값을 받을 변수를 애초에 unsigned int로 설정해 더 효율적
+2. 10진수가 아닌 16진수를 사용함
+
+복잡하지 않은 코드라 그런지 직접 입력한 코드와 의사코드가 상당히 유사함을 알 수 있다
