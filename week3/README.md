@@ -1,4 +1,5 @@
 **과제 1 : 드림핵 기초 문제 풀이**
+
 먼저 ida에서 파일을 열고 쉬운 해석을 위해 F5로 의사코드로 만들기..
 ```
 int __fastcall main(int argc, const char **argv, const char **envp)
@@ -16,8 +17,12 @@ int __fastcall main(int argc, const char **argv, const char **envp)
 }
 ```
 무언가 입력했을 때 맞다 틀리다 결과를 출력하는 코드로 추정
+
 그럼 if문에서 정답과 입력 답을 비교해서 여부를 판단하겠지..?
+
 sub_140001000 더블클릭!
+
+
 ```
 _BOOL8 __fastcall sub_140001000(const char *a1)
 {
@@ -26,6 +31,7 @@ _BOOL8 __fastcall sub_140001000(const char *a1)
 ```
 a1은 사용자 입력 변수인 것 같고 정답은 "Compar3_the_str1ng"
 ![업로드 실패](https://github.com/ramm113/EVISION_8TH/blob/main/week3/%EB%93%9C%EB%A6%BC%ED%95%B5%20%EC%84%B1%EA%B3%B5%20%ED%99%94%EB%A9%B4.png)
+
 
 **과제 2 : 직접 C언어 exe 파일을 빌드한 후, ida로 열어 의사 코드와 비교**
 
