@@ -25,6 +25,7 @@ _BOOL8 __fastcall sub_140001000(const char *a1)
 }
 ```
 a1은 사용자 입력 변수인 것 같고 정답은 "Compar3_the_str1ng"
+![업로드 실패]()
 
 **과제 2 : 직접 C언어 exe 파일을 빌드한 후, ida로 열어 의사 코드와 비교**
 
