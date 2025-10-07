@@ -1,6 +1,6 @@
 **과제 1 : 드림핵 기초 문제 풀이**
 
-먼저 ida에서 파일을 열고 쉬운 해석을 위해 F5로 의사코드로 만들기..
+먼저 ida에서 파일을 열고 쉬운 해석을 위해 F5로 의사코드 만들기..
 ```
 int __fastcall main(int argc, const char **argv, const char **envp)
 {
@@ -17,6 +17,7 @@ int __fastcall main(int argc, const char **argv, const char **envp)
 }
 ```
 사용자가 무언가 입력했을 때 맞다 틀리다 결과를 출력하는 코드로 추정
+
 
 
 그럼 if문에서 정답과 입력 답을 비교해서 여부를 판단할 것으로 생각
